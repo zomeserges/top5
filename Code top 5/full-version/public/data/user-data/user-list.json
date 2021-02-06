@@ -1,0 +1,47 @@
+[
+    {
+        "user_id": 2,
+        "first_name": "Zome",
+        "last_name": "Serges",
+        "email": "zomeserges@gmail.com",
+        "telephone": "0755860555",
+        "password": "601f1889667efaebb33b8c12572835da3f027f78",
+        "ver_token": null,
+        "created_at": "2021-01-22T20:14:09.000000Z",
+        "updated_at": "2021-01-22T20:14:09.000000Z",
+        "type": "Super Admin",
+        "status": "active",
+        "is_verified": 1,
+        "department": "Securite"
+    },
+    {
+        "user_id": 3,
+        "first_name": "KEMMOU TCHINDA",
+        "last_name": "Desmond",
+        "email": "kemou@gmail.com",
+        "telephone": "0660686578",
+        "password": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "ver_token": null,
+        "created_at": "2021-02-23T22:06:02.000000Z",
+        "updated_at": "2021-01-25T15:33:22.000000Z",
+        "type": "Admin Indicateur",
+        "status": "blocked",
+        "is_verified": 1,
+        "department": "Qualite"
+    },
+    {
+        "user_id": 4,
+        "first_name": "Pegwe",
+        "last_name": "Wadji Kemone",
+        "email": "daniel@gmail.com",
+        "telephone": "057855878",
+        "password": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "ver_token": null,
+        "created_at": "2021-01-24T09:23:34.000000Z",
+        "updated_at": "2021-01-25T15:25:03.000000Z",
+        "type": "Admin Pareto",
+        "status": "deactivated",
+        "is_verified": 1,
+        "department": "Securite"
+    }
+]

@@ -1,0 +1,59 @@
+.btnOpen {
+    background-color: coral;
+    padding: 1em 2em;
+    border: 0;
+    color: white;
+}
+.btnOpen:hover{
+    background: gray;
+}
+
+.overlayPopup {
+	background-color: rgba(0,0,0,0.5);
+    display: none;
+	animation-duration: 3s;
+  	animation-delay: 150s;
+    position:fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;		    
+}
+.popup-content{
+    /*background-color: #f7f7f7;*/
+	background: url(../img/bg.jpg);
+    margin: 10% auto;
+    width: 55%;
+    padding:0px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+.closeBtn{
+    color:darkgrey;
+	text-align: right;
+    font-size: 20pt;
+    cursor: pointer;       
+}
+.closeBtn:hover{
+    color: rgb(109, 109, 109);   
+}
+.content {
+    padding: 0.5em;
+    line-height: 20pt;
+}
+.headerPopup{
+    /*background: rgb(34, 40, 206);*/
+    padding:5px;
+    color:#fff;
+}
+
+.btnAcheter {
+    background-color: coral;
+    padding: 1em 2em;
+    border: 0;
+    color: white;
+}
+.btnAcheter:hover{
+    background: gray;
+}

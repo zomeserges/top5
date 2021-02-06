@@ -1,0 +1,20 @@
+[
+    {
+        "iddirection": 1,
+        "direction": "Securite",
+        "created_at": "2021-02-03T11:19:33.000000Z",
+        "updated_at": "2021-02-03T11:20:22.000000Z"
+    },
+    {
+        "iddirection": 2,
+        "direction": "Qualite",
+        "created_at": "2021-02-03T11:20:32.000000Z",
+        "updated_at": "2021-02-03T11:20:32.000000Z"
+    },
+    {
+        "iddirection": 3,
+        "direction": "Maintenance",
+        "created_at": "2021-02-03T11:20:40.000000Z",
+        "updated_at": "2021-02-03T11:20:40.000000Z"
+    }
+]

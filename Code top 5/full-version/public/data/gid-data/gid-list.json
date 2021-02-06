@@ -1,0 +1,93 @@
+[
+    {
+        "idgid": 1,
+        "idorigine": 3,
+        "gid": "Zome Se",
+        "pass": "40bd001563085fc35165329ea1ff5c5ecbdbbeef",
+        "nom": "Serges",
+        "prenom": "Zome",
+        "email": "zomeserges@gmail.com",
+        "origine": "Departement de maintenance",
+        "direction": "Securite",
+        "created_at": "2021-02-03T12:54:05.000000Z",
+        "updated_at": "2021-02-03T18:23:25.000000Z"
+    },
+    {
+        "idgid": 2,
+        "idorigine": null,
+        "gid": "Desmond KEMMOU TCHINDA",
+        "pass": "601f1889667efaebb33b8c12572835da3f027f78",
+        "nom": "KEMMOU TCHINDA",
+        "prenom": "Desmond",
+        "email": "morelle@gmail.com",
+        "origine": "Direction central",
+        "direction": null,
+        "created_at": "2021-02-03T13:10:45.000000Z",
+        "updated_at": "2021-02-03T17:54:42.000000Z"
+    },
+    {
+        "idgid": 3,
+        "idorigine": 3,
+        "gid": "Zome Serges",
+        "pass": null,
+        "nom": null,
+        "prenom": "Zome",
+        "email": "zome@gmail.com",
+        "origine": "Service informatique",
+        "direction": null,
+        "created_at": "2021-02-03T14:20:54.000000Z",
+        "updated_at": "2021-02-03T14:20:54.000000Z"
+    },
+    {
+        "idgid": 4,
+        "idorigine": 4,
+        "gid": "zomeserges@gmail.com",
+        "pass": null,
+        "nom": "Serges",
+        "prenom": "Zome",
+        "email": "zomeserges@gmail.co",
+        "origine": "Service de maintenance",
+        "direction": null,
+        "created_at": "2021-02-03T14:28:08.000000Z",
+        "updated_at": "2021-02-03T14:28:08.000000Z"
+    },
+    {
+        "idgid": 5,
+        "idorigine": 3,
+        "gid": "zomeserges@gmail.com",
+        "pass": "7b52009b64fd0a2a49e6d8a939753077792b0554",
+        "nom": "Serges",
+        "prenom": "Zome",
+        "email": "zomeserges@gmail.ck",
+        "origine": "Service informatique",
+        "direction": null,
+        "created_at": "2021-02-03T14:31:18.000000Z",
+        "updated_at": "2021-02-03T14:31:18.000000Z"
+    },
+    {
+        "idgid": 6,
+        "idorigine": 4,
+        "gid": "zomeserges",
+        "pass": "601f1889667efaebb33b8c12572835da3f027f78",
+        "nom": "Serges",
+        "prenom": "Zome",
+        "email": "zomeserges@gmail.tk",
+        "origine": "Service de maintenance",
+        "direction": null,
+        "created_at": "2021-02-03T14:51:19.000000Z",
+        "updated_at": "2021-02-03T14:51:19.000000Z"
+    },
+    {
+        "idgid": 7,
+        "idorigine": 1,
+        "gid": "zomeserges@gmail.com",
+        "pass": "601f1889667efaebb33b8c12572835da3f027f78",
+        "nom": "Serges",
+        "prenom": "Zome",
+        "email": "zomeserges@gmail.j",
+        "origine": "Direction central",
+        "direction": null,
+        "created_at": "2021-02-03T14:53:46.000000Z",
+        "updated_at": "2021-02-03T14:53:46.000000Z"
+    }
+]

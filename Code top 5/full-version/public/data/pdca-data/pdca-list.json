@@ -1,0 +1,26 @@
+[
+    {
+        "idpdca": 1,
+        "etat": "President",
+        "created_at": "2021-02-03T11:35:48.000000Z",
+        "updated_at": "2021-02-03T11:35:48.000000Z"
+    },
+    {
+        "idpdca": 2,
+        "etat": "Directeur",
+        "created_at": "2021-02-03T11:36:06.000000Z",
+        "updated_at": "2021-02-03T11:36:06.000000Z"
+    },
+    {
+        "idpdca": 3,
+        "etat": "Collecteur",
+        "created_at": "2021-02-03T11:36:18.000000Z",
+        "updated_at": "2021-02-03T11:36:18.000000Z"
+    },
+    {
+        "idpdca": 4,
+        "etat": "Administrateur",
+        "created_at": "2021-02-03T11:36:33.000000Z",
+        "updated_at": "2021-02-03T11:36:33.000000Z"
+    }
+]
