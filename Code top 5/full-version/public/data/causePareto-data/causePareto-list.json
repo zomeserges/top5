@@ -1,1 +1,18 @@
-[]
+[
+    {
+        "idcausepareto": 1,
+        "cause": "Composants HS",
+        "description": "<p>Il s&#39;agit des composants tr&egrave;s <strong>vuln&eacute;rables</strong></p>",
+        "pareto": "Erreur de protection",
+        "created_at": "2021-02-07T12:12:22.000000Z",
+        "updated_at": "2021-02-07T12:12:22.000000Z"
+    },
+    {
+        "idcausepareto": 2,
+        "cause": "Erreur humaine",
+        "description": "HHHHHHHHHHHHHHHHHHHHHHHHHHHH",
+        "pareto": "Erreur de DE CONSERVATION",
+        "created_at": "2021-02-07T13:54:33.000000Z",
+        "updated_at": "2021-02-07T14:34:09.000000Z"
+    }
+]

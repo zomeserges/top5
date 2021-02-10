@@ -1,21 +1,21 @@
-//////// START causePareto //////////////////////////
+//////// START action //////////////////////////
 
-public function causePareto_index(){
+public function action_index(){
 $breadcrumbs = [
 ['link'=>"dashboard-analytics",'name'=>"Home"], ['link'=>"dashboard-analytics",'name'=>"Pages"], ['name'=>"Cause Pareto"]
 ];
 
-//$causeParetos = causePareto::all();
+//$actions = action::all();
 //$directions = Direction::all();
-//$causeParetos =$directions;
-return view('/pages/app-causepareto-create',[
+//$actions =$directions;
+return view('/pages/app-action-create',[
 'breadcrumbs' => $breadcrumbs]);
 
 }
 
-public function causePareto_list(){
+public function action_list(){
 $breadcrumbs = [
-['link'=>"dashboard-analytics",'name'=>"Home"], ['link'=>"dashboard-analytics",'name'=>"Pages"], ['name'=>"causePareto"]
+['link'=>"dashboard-analytics",'name'=>"Home"], ['link'=>"dashboard-analytics",'name'=>"Pages"], ['name'=>"action"]
 ];
 if (!userLoggedIn()) {
 redirect('/');
@@ -26,67 +26,95 @@ $errors = [];
 $success = '';
 if ($request->has("ismodif")) {
 $params = $request->all();
-$causePareto = causePareto::query()->where("idcausePareto", '=', $params['edit_causePareto_id'])->first();
-//echo $causePareto;
+$action = action::query()->where("idaction", '=', $params['edit_action_id'])->first();
+//echo $action;
 //  echo $params;
-$causePareto->causePareto = $params['edit_causePareto_name'];
-$causePareto->save($params);
-//echo $causePareto;
+$action->action = $params['edit_action_name'];
+$action->save($params);
+//echo $action;
 //echo $params;
-//return redirect("/app-causePareto-list");
+//return redirect("/app-action-list");
 }
 
-return view('/pages/app-causePareto-list', [
+return view('/pages/app-action-list', [
 'breadcrumbs' => $breadcrumbs]);
 
 }
-public function causePareto_create(){
+public function action_create(){
 $breadcrumbs = [
-['link'=>"dashboard-analytics",'name'=>"Home"], ['link'=>"dashboard-analytics",'name'=>"Pages"], ['name'=>"Create causePareto"]
+['link'=>"dashboard-analytics",'name'=>"Home"], ['link'=>"dashboard-analytics",'name'=>"Pages"], ['name'=>"Create action"]
 ];
 global $title;
-$title = "causePareto";
+$title = "action";
 $errors = [];
 if (!userLoggedIn()) {
 redirect('/');
 }
-$causeParetos = causePareto::all();
+$actions = action::all();
 $params = request()->toArray();
 $classes =[];
 if (count($params)!==0){
-foreach ($causeParetos as $causePareto){
-if($causePareto->derection == $params["causePareto"]){
-array_push($errors, "La causePareto existe deja");
+foreach ($actions as $action){
+if($action->derection == $params["action"]){
+array_push($errors, "La action existe deja");
 }
 }
 if (count($errors)==0){
-$causePareto = causePareto::query()->create($params);
-array_push($classes,"add_causePareto_success add_causePareto_error");
+$action = action::query()->create($params);
+array_push($classes,"add_action_success add_action_error");
 }else{
-array_push($classes,"add_causePareto_error");
+array_push($classes,"add_action_error");
 }
 }
 
-// $causePareto = causePareto::query()->create($params);
-return redirect('app-causePareto-list')->with('success',"Enregistrement effectuer avec success");
+// $action = action::query()->create($params);
+return redirect('app-action-list')->with('success',"Enregistrement effectuer avec success");
 }
 
-//////// END causePareto //////////////////////////
+//////// END action //////////////////////////
 
-//causePareto Pages
-Route::get('/app-causePareto-index', 'UserPagesController@causePareto_index');
-Route::post('/app-causePareto-create', 'UserPagesController@causePareto_create');
-Route::any('/app-causePareto-list', 'UserPagesController@causePareto_list');
+//action Pages
+Route::get('/app-action-index', 'actionController@action_index');
+Route::post('/app-action-create', 'actionController@action_create');
+Route::any('/app-action-list', 'actionController@action_list');
 
 
-// helpers
 
-function getCauseParetos(){
-$causeParetos = causePareto::all();
+// helpers action
+
+function getActions(){
+$actions = action::all();
 // Fetch all records
 // Write File
-$causeParetoJsonString = json_encode($causeParetos, JSON_PRETTY_PRINT);
-$causeParetoData['data'] = $causeParetos;
-file_put_contents(base_path('public/data/causePareto-data/causePareto-list.json'), stripslashes($causeParetoJsonString));
+$actionJsonString = json_encode($actions, JSON_PRETTY_PRINT);
+$actionData['data'] = $actions;
+file_put_contents(base_path('public/data/action-data/action-list.json'), stripslashes($actionJsonString));
 
 }
+
+{
+"url": "",
+"name": "Action",
+"icon": "feather icon-layout",
+"submenu": [
+{
+"url": "app-action-list",
+"name": "List Action",
+"icon": "feather icon-list",
+"i18n": "nav.app_action_list"
+},
+{
+"url": "app-action-index",
+"name": "Create action",
+"icon": "feather icon-circle",
+"i18n": "nav.app_action_index"
+}
+]
+},
+
+<select name="idescalade" id="action_escalade" class="form-control" required>
+  <option selected value="{{request('idescalade')}}">Choose idescalade</option>
+  @foreach($escalades as $escalade)
+  <option value="{{$escalade->idescalade}}">{{$escalade->escalade}}</option>
+  @endforeach
+</select>

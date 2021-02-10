@@ -104,6 +104,21 @@ Route::get('/app-user-edit', 'UserPagesController@user_edit');
   Route::post('/app-origine-create', 'UserPagesController@origine_create');
   Route::any('/app-origine-list', 'UserPagesController@origine_list');
 
+
+//indicateur Pages
+  Route::get('/app-indicateur-index', 'IndicateurController@indicateur_index');
+  Route::post('/app-indicateur-create', 'IndicateurController@indicateur_create');
+  Route::any('/app-indicateur-list', 'IndicateurController@indicateur_list');
+  Route::any('/app-indicateur-detail/{id}', 'IndicateurController@indicateur_detail');
+
+  //action Pages
+  Route::get('/app-action-index', 'actionController@action_index');
+  Route::post('/app-action-create', 'actionController@action_create');
+  Route::any('/app-action-list', 'actionController@action_list');
+  Route::any('/app-action-detail/{id}', 'ActionController@action_detail');
+
+
+
 // Infos Pages
   Route::any('/app-info-list', 'InfoPagesController@info_list');
 

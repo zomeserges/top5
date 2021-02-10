@@ -1,6 +1,15 @@
 <?php
 
 return [
+  "Action"=>"Action",
+  "List Action"=>"Liste des Actions",
+  "Create action"=>"Créer une action",
+  "Cause pareto"=>"Causes pareto",
+  "List Cause"=>"Liste des Causes",
+  "Create cause pareto"=>"Créer une cause pareto",
+    "Indicateur"=>"Indicateur",
+    "List Indicateur"=>"Liste des Indicateurs",
+    "Create Indicateur" =>"Créer un Indicateurr",
     "Origine"=>"Origine",
     "GID" => "GID",
     "PDCA" => "PDCA",

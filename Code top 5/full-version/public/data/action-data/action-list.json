@@ -1,0 +1,17 @@
+[
+    {
+        "idaction": 1,
+        "idpdca": 4,
+        "idsqdip": 2,
+        "idescalade": 1,
+        "iddirection": 1,
+        "idgid": 2,
+        "idorigine": 2,
+        "responsable": "Zome serges",
+        "data_prevu": null,
+        "action": "<p>Enregistrement de la toute premiere action</p>",
+        "plan_action": null,
+        "created_at": "2021-02-10T14:41:05.000000Z",
+        "updated_at": "2021-02-10T14:41:05.000000Z"
+    }
+]

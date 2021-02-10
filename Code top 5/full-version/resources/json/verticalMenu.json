@@ -198,6 +198,67 @@
       "icon": "feather icon-save"
     },
 
+
+    {
+      "url": "",
+      "name": "Indicateur",
+      "icon": "feather icon-info",
+      "submenu": [
+        {
+          "url": "app-indicateur-list",
+          "name": "List Indicateur",
+          "icon": "feather icon-circle",
+          "i18n": "nav.app_indicateur_list"
+        },
+        {
+          "url": "app-indicateur-index",
+          "name": "Create Indicateur",
+          "icon": "feather icon-circle",
+          "i18n": "nav.app_indicateur_index"
+        }
+      ]
+    },
+
+    {
+      "url": "",
+      "name": "Cause pareto",
+      "icon": "feather icon-layout",
+      "submenu": [
+        {
+          "url": "app-causePareto-list",
+          "name": "List Cause",
+          "icon": "feather icon-list",
+          "i18n": "nav.app_causePareto_list"
+        },
+        {
+          "url": "app-causePareto-index",
+          "name": "Create cause pareto",
+          "icon": "feather icon-circle",
+          "i18n": "nav.app_causePareto_index"
+        }
+      ]
+    },
+
+    {
+      "url": "",
+      "name": "Action",
+      "icon": "feather icon-upload-cloud",
+      "submenu": [
+        {
+          "url": "app-action-list",
+          "name": "List Action",
+          "icon": "feather icon-list",
+          "i18n": "nav.app_action_list"
+        },
+        {
+          "url": "app-action-index",
+          "name": "Create action",
+          "icon": "feather icon-circle",
+          "i18n": "nav.app_action_index"
+        }
+      ]
+    },
+
     {
       "url": "",
       "name": "Infos",

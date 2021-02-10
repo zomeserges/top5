@@ -645,10 +645,12 @@ class UserPagesController extends Controller
     $success = '';
     if ($request->has("ismodif")) {
       $params = $request->all();
-      $causePareto = CausePareto::query()->where("idcausePareto", '=', $params['edit_causePareto_id'])->first();
-//echo $causePareto;
-//  echo $params;
-      $causePareto->causePareto = $params['edit_causePareto_name'];
+      $causePareto = CausePareto::query()->where("idcausepareto", '=', $params['edit_causePareto_id'])->first();
+  //echo $causePareto;
+ //var_dump($params); ;
+      $causePareto->cause = $params['edit_cause'];
+      $causePareto->description = $params['edit_descriptionCausePareto'];
+      $causePareto->pareto = $params['edit_pareto'];
       $causePareto->save($params);
 //echo $causePareto;
 //echo $params;
@@ -674,7 +676,7 @@ class UserPagesController extends Controller
     $classes =[];
     if (count($params)!==0){
       foreach ($causeParetos as $causePareto){
-        if($causePareto->derection == $params["causePareto"]){
+        if($causePareto->cause == $params["cause"]){
           array_push($errors, "La causePareto existe deja");
         }
       }

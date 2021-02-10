@@ -4,10 +4,12 @@
  * @param $userId
  */
 const UID_KEY = 'uid-key';
+use App\Models\Action;
 use App\Models\CausePareto;
 use App\Models\Direction;
 use App\Models\Escalade;
 use App\Models\Gid;
+use App\Models\Indicateur;
 use App\Models\Origine;
 use App\Models\Pdca;
 use App\Models\Sqdip;
@@ -119,11 +121,34 @@ function getOrigines(){
 
 function getCauseParetos(){
   $causeParetos = CausePareto::all();
-// Fetch all records
-// Write File
+  foreach ($causeParetos as $causePareto){
+  }
+
   $causeParetoJsonString = json_encode($causeParetos, JSON_PRETTY_PRINT);
   $causeParetoData['data'] = $causeParetos;
   file_put_contents(base_path('public/data/causePareto-data/causePareto-list.json'), stripslashes($causeParetoJsonString));
+
+}
+
+
+// helpers indicateur
+function getindicateurs(){
+  $indicateurs = Indicateur::all();
+  $indicateurJsonString = json_encode($indicateurs, JSON_PRETTY_PRINT);
+  $indicateurData['data'] = $indicateurs;
+  file_put_contents(base_path('public/data/indicateur-data/indicateur-list.json'), stripslashes($indicateurJsonString));
+
+}
+
+// helpers action
+
+function getActions(){
+  $actions = Action::all();
+// Fetch all records
+// Write File
+  $actionJsonString = json_encode($actions, JSON_PRETTY_PRINT);
+  $actionData['data'] = $actions;
+  file_put_contents(base_path('public/data/action-data/action-list.json'), stripslashes($actionJsonString));
 
 }
 

@@ -10,7 +10,7 @@ class Action extends Model
 {
 
   protected $table = "action";
-    protected $fillable = ["idaction", "idpdca", "idsqdip", "idescalade", "idlogin", "iddirection","idgid", "idorigine", "etat", "responsable", "data_prevu", "action", "direction", "origine", "sqdip", "escalade", "gestionnaire"];
+    protected $fillable = ["idaction", "idpdca", "idsqdip", "idescalade", "iddirection","idgid", "idorigine", "responsable", "data_prevu", "action",  "plan_action"];
     protected $primaryKey = "idaction";
 
     public function pdca(){
@@ -31,8 +31,8 @@ class Action extends Model
     public function gid(){
         return $this->belongsTo(Gid::class,"idgid");
     }
-    public function loginpareto(){
+    /*public function loginpareto(){
         return $this->belongsTo(Pareto::class,"idlogin");
-    }
+    }*/
 
 }

@@ -146,7 +146,7 @@
                     <h5>Nouvaux causePareto</h5>
                     {{-- Button trigger modal --}}
 
-                    <div class='modal fade text-left' id="inlineForm1" tabindex="-1" role="dialog"
+                    <div class='modal modal-xl fade text-left' id="inlineForm1" tabindex="-1" role="dialog"
                          aria-labelledby="myModalLabel33" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
                         <div class="modal-content">
@@ -171,20 +171,17 @@
                               @endif
                               <label>Cause du pareto : </label>
                               <div class="form-group">
-
-                                <input class="form-control" type="text" name="causePareto" id="causePareto" placeholder="Cause du Pareto" required>
-
+                                <input class="form-control" type="text" name="cause" id="causePareto" placeholder="Cause du Pareto" required>
                               </div>
                               <label>Description : </label>
                               <div class="form-group">
-                                <input class="form-control editor" type="text" name="descriptionCausePareto" id="descriptionCausePareto" placeholder="Decrire la cause du Pareto" required>
+                                <textarea class="form-control " name="description" id="descriptionCausePareto"></textarea>
                               </div>
 
-                                <div id="editor">
-                                  <br/>
-                                  <br/>
-                                  <br/>
+                                <div class="form-group">
+                                  <input class="form-control" type="text" name="pareto" id="pareto" placeholder="Pareto" required>
                                 </div>
+
 
                               {!! csrf_field() !!}
                               <div class="modal-footer">
@@ -208,56 +205,7 @@
 
 
 
-      <!--Start Modified causePareto -->
-      <section id="form-and-scrolling-components">
-        <div class="row match-height">
-          <div class="col-md-4 col-sm-12">
-            <div class="card">
-              <div class="card-header">
-                <h4 class="card-title">Form Components</h4>
-              </div>
-              <div class="card-content">
-                <div class="card-body">
-                  <div class="form-group">
-                    <h5>Modifier les paramettres</h5>
-                    {{-- Button trigger modal --}}
 
-                    <div class='modal fade text-left' id="inlineForm" tabindex="-1" role="dialog"
-                         aria-labelledby="myModalLabel33" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h4 class="modal-title" id="myModalLabel33">Modifier le causePareto </h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
-                          <form  method="post">
-                            <div class="modal-body">
-                              <input class="form-control" type="hidden" name="edit_causePareto_id" id="edit_causePareto_id"  placeholder="" required>
-                              <label>causePareto : </label>
-                              <div class="form-group">
-                                <input class="form-control" type="text" name="edit_causePareto_name" id="edit_causePareto_name" placeholder="Nouveau Nom de la causePareto" required>
-                              </div>
-                              <input  type="hidden" name="ismodif" value="123143-00292-20291">
-                              <br>
-                            </div>
-                            {!! csrf_field() !!}
-                            <div class="modal-footer">
-                              <button class="btn btn-primary pull-right"  style="margin-top:20px;">Modifier la causePareto</button>
-                              <button type="button"  data-dismiss="modal" aria-label="Close" class="btn btn-danger pull-right " style="margin-top:20px;">Annuler</button>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
 
       {{-- add new sidebar ends --}}
@@ -287,6 +235,8 @@
 
         {{--For editor--}}
         <script src="{{ asset(mix('js/scripts/editors/editor-quill.js')) }}"></script>
+        <script src="//cdn.ckeditor.com/4.16.0/full/ckeditor.js"></script>
+        <script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
 
 
 @endsection
